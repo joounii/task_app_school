@@ -1,5 +1,5 @@
 export default interface ITask{
-    taskDescription: string;
+    title: string;
     completed: boolean;
-    taskId: number | null;
+    id: number | null;
 }
