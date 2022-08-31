@@ -41,6 +41,7 @@ function AddTaskForm(props: IProps){
                                 name="title"
                                 value={formValue.title}
                                 onChange={onInputChange}
+                                required
                             />
                             <button className='btn btn-success mt-3 bi bi-check-lg'> Save</button>
                         </form>
