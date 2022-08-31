@@ -20,6 +20,7 @@ function TaskList(props: IProps) {
                         <td>Completed</td>
                         <td></td>
                         <td></td>
+                        <td></td>
                     </tr>
                 </thead>
                 <tbody>
@@ -30,11 +31,12 @@ function TaskList(props: IProps) {
                                 <td>{task.title}</td>
                                 <td>{task.completed}</td>
                                 <td>
+                                    <button className="btn btn-success bi bi-pencil" onClick={() => props.setTaskToEdit(task)}> Edit</button>
+                                </td>
+
+                                <td>
                                     <button className="btn btn-danger bi bi-trash3" onClick={() => props.delete(task)}> Delete</button>    
                                 </td>
-                                <td>
-                                    <button className="btn btn-success bi bi-pencil" onClick={() => props.setTaskToEdit(task)}> Edit</button>    
-                                </td>  
                             </tr>
                         );
                     })}

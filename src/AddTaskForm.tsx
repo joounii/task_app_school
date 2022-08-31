@@ -33,7 +33,7 @@ function AddTaskForm(props: IProps){
                     </div>
                     <div className='card-body'>
                         <form className="formAdd" onSubmit={onFormSubmit}>
-                            <label className='form-label'>Task Description</label>
+                            <label className='form-label'>Enter a new Task</label>
                             <input
                                 className='form-control'
                                 type="text"
