@@ -30,8 +30,8 @@ function EditTaskForm(props: IProps) {
                         <h2>Edit Task {props.taskToEdit?.id}</h2>
                     </div>
                     <div className="card-body">
-                        <label className='form-label'>Edit the task</label>
-                        <form className="formEdit" onSubmit={onFormSubmit}>
+
+                        <form className="form-floating" onSubmit={onFormSubmit}>
                             <input
                                 type="text"
                                 placeholder="Please enter a Task"
@@ -40,7 +40,9 @@ function EditTaskForm(props: IProps) {
                                 className="form__field form-control"
                                 onChange={onInputChange}
                                 required
+                                id="edit"
                             />
+                            <label htmlFor="edit" className='form-label'>Edit the task</label>
                             <button className="btn btn-success mt-3 bi bi-check-lg"> Edit</button>
                         </form>
                     </div>
